@@ -1126,14 +1126,12 @@ label.browse-button {
     max-width: 99%;
     
   }
-  .advantages-container{
-    height: 100vh;
-  }
+  
   .App{
     width: 100%;
   }
   .result-container1{
-    height: 100vh;
+    height: 800px;
     flex-direction: column;
     width: 700px;
     overflow: hidden;
@@ -1156,11 +1154,11 @@ label.browse-button {
   }
   .output-container{
     flex-direction: column;
-    height: 100vh;
+    height: 800px;
     
   }
   .result-out{
-    height: 40vh;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1388,7 +1386,7 @@ label.browse-button {
     font-size: 25px;
   }
   .adv1 ,.slick-center{
-    height: 45%;
+    height: 400px;
   }
   .adv1 p{
     font-size: 15px;
@@ -1405,7 +1403,7 @@ label.browse-button {
   }
   .adv{
     flex-wrap: wrap;
-    height: 100%;
+    
   }
   
   .adv1{
@@ -1453,20 +1451,21 @@ label.browse-button {
     display: flex;
     
     width: 350px;
-    height:100vh;
+    height:710px;
     flex-direction: column; 
     flex-grow: 0 0 1;
   }
   
   .result-description{
     font-size: 15px;
+    margin-top: -90px;
   }
   .result-container{
     padding: 10px;
   }
   .result-container1{
     width: 320px;
-    height: 90vh;
+    height: 710px;
     overflow: hidden;
   }
 
