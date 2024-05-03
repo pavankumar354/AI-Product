@@ -1575,8 +1575,29 @@ label.browse-button {
   .result-container{
     padding: 0px;
   }
+  .result-image{
+    width: 240px;
+  }
   .sample-image{
     width: 200px;
     height: 100px;
+  }
+  .result-description{
+   font-size: 10px;
+  }
+  .adv1 h3{
+    font-size: 15px;
+  }
+  .adv1 p{
+    font-size: 10px;
+  }
+  .adv1 .slick-center{
+    height: 200px;
+  }
+  .slick-prev{
+    margin-left: 20px;
+  }
+  .slick-next{
+margin-right: 20px;
   }
 }
