@@ -1,0 +1,111 @@
+.advantages-container {
+    /* background-color: rgba(236,245,255,0.7); */
+    /* background-image: url("./Untitled\ design\ \(9\).png");
+    width: 100%;  */
+  
+    padding: 2em 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: #333;
+    flex-grow: 0 0 1;
+    gap: 70px;
+    overflow: auto;
+  
+  }
+  
+  .adv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap:7px; */
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+  
+  .advantages-container h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: black;
+    font-size: 45px;
+  
+  }
+  
+  .slider-container {
+    display: flex;
+  
+  }
+.adv1 {
+    opacity: 1;
+    /* background-color: rgba(246, 163, 190,0.3); */
+    /* background: #e9f0fa; */
+    /* background: rgb(255, 69, 0,0.8); */
+    /* background: rgb(27,124,237,0.5);
+   background-color: #FF8A08; */
+   background-color: #f8cbd21a;
+   border: 1px solid #80D6EC;
+   /* background-color: #fff;
+      background-image: linear-gradient(#e2e3ff, #fbfbff 100%, #fff); */
+    border-radius: 40px;
+    /* border: solid 0px #d0d7e7; */
+    /* background-color: rgba(246, 163, 190, .7); */
+    width: 320px;
+    height: 310px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: .75rem .75rem .2rem #4c77e336;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .adv1:hover{
+    transform: scale(1.05);
+  }
+  
+  
+  
+  .adv-images2{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+  }
+  
+  .adv-img{
+   padding: 0px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .adv1 h3{
+    
+    font-size: 20px;
+    text-align: center;
+    color: orangered;
+    
+    
+  }
+  .adv1 p {
+   color: white;
+    width: 90%;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    top: 0%;
+    margin-bottom: 10px;
+  }   

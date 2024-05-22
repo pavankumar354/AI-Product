@@ -1,0 +1,46 @@
+.video-container {
+    position: relative;
+    background-image: url("../vector_design.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+video {
+    width: 850px;
+
+    object-fit: fill;
+    border-radius: 20px;
+    align-self: center;
+
+}
+
+.video-controls {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orangered;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+
+
+.control-icon1 {
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+    margin: auto;
+}

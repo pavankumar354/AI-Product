@@ -1,0 +1,100 @@
+.carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-image-container {
+    width: 100%;
+  
+    overflow: hidden;
+  
+  }
+  
+  .carou {
+    height: 950px;
+  }
+  
+  .carousel-image-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+  }
+  
+  
+  .description {
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    font-size: 28px;
+    width: 80%;
+  
+  }
+  
+  .heading {
+    font-weight: 700;
+    color: orangered;
+    /* Deep, professional blue */
+    font-size: 70px;
+    /* Slightly larger for emphasis */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .text {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+  
+  }
+  
+  .contact {
+    background-color: orangered;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  
+  }
+  
+  
+  .carousel-image-container {
+    height: 600px;
+  }
+  
+  .carou {
+    background: url("../Untitled_design\ \(3\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .carousel-image-container img {
+    width: 100%;
+    height: 580px;
+    object-fit: fill;
+  }
+  
+  
+  
+  .description {
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    font-size: 28px;
+    width: 80%;
+  
+  }
