@@ -117,12 +117,11 @@
       object-fit: contain;
     }
     .description{
-      font-size: 25px;
-      line-height: 28px;
-      width: 90%;
+      font-size: 18px;
+      line-height: 20px;
     }
     .heading{
-      font-size: 50px;
+      font-size: 40px;
     }
     .contact{
       font-size: 15px;
@@ -130,16 +129,14 @@
     }
     .carousel-image-container img {
       width: 100%;
-      height: 470px;
+      height: 400px;
       object-fit: fill;
     }
     .carousel-image-container {
-      height: 500px;
-    }
-    .carou {
-      height: 890px;
-    }
-    .text{
       height: 400px;
     }
+    .carou {
+      height: 700px;
+    }
+    
   }
