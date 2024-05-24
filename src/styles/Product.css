@@ -74,7 +74,7 @@
   }
   
   .result-container1 h3 {
-    color: orangered;
+    color: black;
   
   
     font-size: 30px;
@@ -461,4 +461,14 @@ label.browse-button {
       transform: translateX(0px);
       width: 16px;
     }
+  }
+
+
+
+  @media  (max-width:500px) {
+    .sample{
+      height: 125px;
+      width: 260px;
+    }
+    
   }

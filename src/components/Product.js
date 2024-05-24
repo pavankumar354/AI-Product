@@ -246,7 +246,7 @@ export default function Product() {
           <div id="result-container" className={`result-container ${typingAnimation ? 'typing-animation' : ''}`}>
             {!apiImage && (
               <div className='result-container1 ' >
-                <h3>Explore Our Featured Samples</h3>
+                <h3>Explore <span className='nvision'>Our Featured Samples</span></h3>
                 <hr className='hr-line' />
                 <div className='sample-image'>
                   {sampleImages.map((sample, index) => (

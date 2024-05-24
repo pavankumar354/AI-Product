@@ -359,7 +359,7 @@ gap: 50px;
 }
 
 
-@media (max-width:450px) {
+@media (max-width:500px) {
   .carousel-caption {
     text-align: center;
   }
@@ -496,8 +496,8 @@ gap: 50px;
   }
 
   .sample {
-    width: 250px;
-    height: 140px;
+    width: 230px;
+    height: 130px;
     margin: 5px;
   }
 

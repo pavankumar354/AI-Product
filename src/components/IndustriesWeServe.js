@@ -28,7 +28,7 @@ export default function IndustriesWeServe() {
             <div className="row">
               <MdPrecisionManufacturing className='icon' />
               <div className="description">
-                <h4>Manufacturing Sector</h4>
+                <h4>Manufacturing</h4>
                 <p>Nvision AI automates inspections, cutting costs and enhancing quality control in manufacturing.</p>
   
               </div>
@@ -39,7 +39,7 @@ export default function IndustriesWeServe() {
             <div className="row">
               <BiCar className="icon" />
               <div className="description">
-                <h4>Automotive Sector</h4>
+                <h4>Automotive</h4>
                 <p>Nvision AI speeds up inspections, reducing downtime and streamlining inventory management in the automotive industry.</p>
   
               </div>
@@ -50,7 +50,7 @@ export default function IndustriesWeServe() {
             <div className="row">
               <LiaMicrochipSolid className="icon" />
               <div className="description">
-                <h4>Semiconductors sector</h4>
+                <h4>Semiconductors</h4>
                 <p>Nvision AI ensures high-precision inspections, improving yield and cost-efficiency in semiconductor production.</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function IndustriesWeServe() {
             <div className="row">
               <AiOutlineInsurance className="icon" />
               <div className="description">
-                <h4>Insurance Sector</h4>
+                <h4>Insurance</h4>
                 <p>Nvision AI enhances risk assessment accuracy, streamlining claims and reducing rework in the insurance sector.</p>
               </div>
             </div>

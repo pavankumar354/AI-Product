@@ -4,7 +4,7 @@ import appimg1 from "../images/Defect.png";
 import appimg2 from "../images/defect cate.png";
 import appimg3 from "../images/top-view-budget-planning-note-with-pens-gray-surface-job-copybook-school-student-business-work-college-money-budget.jpg";
 import appimg4 from "../images/finan.png";
-
+ 
 const features = [
     {
         id: 1,

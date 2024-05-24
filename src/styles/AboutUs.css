@@ -75,3 +75,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   padding: 12px 18px;
   border: none;
 }
+
+
+
+
+@media (max-width:500px){
+  .about-us-2-driver{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-us-2-logo{
+    height: 50px;
+  }
+  .about-us-2-driver p{
+    font-size: 0.8rem;
+  }
+  .about-us-2-social{
+    margin: 10px;
+  }
+}
