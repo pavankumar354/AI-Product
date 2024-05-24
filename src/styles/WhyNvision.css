@@ -376,11 +376,11 @@
 } */
 
 
-@media (max-width:1500px){
+@media (max-width:1300px){
   .features-list {
     position: absolute;
     width: 100%;
-    left: 50%;
+    left: 54%;
     top: 50%;
     transform: translateY(-50%);
   }
