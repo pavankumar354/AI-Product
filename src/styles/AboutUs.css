@@ -1,62 +1,77 @@
-.driver {
-    max-width: 90%;
-    margin: auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  
-  .driver1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo {
-  
-    height: 70px;
-    max-width: 100px;
-  }
-  
-  .driver img {
-    max-width: 512px;
-  }
-  
-  .abouthead {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600;
-    margin: 20px;
-    margin-top: 50px;
-  
-  }
-  
-  .social {
-    margin: 20px;
-    font-size: 40px;
-    color: rgb(0, 0, 0, 0.8);
-  }
-  
-  
-  .driver span {
-    color: #593cfb;
-  }
-  
-  .driver p {
-    font-size: 1rem;
-    color: #333;
-    padding: 1.5rem 0;
-    text-align: center;
-  }
-  
-  .driver button {
-    background-color: orangered;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 12px 18px;
-    border: none;
-  }
-  
+.about-us-2-driver {
+  max-width: 90%;
+  margin: auto auto 50px;
+  /* background-image: url("../images/people-with-laptops-office.jpg");
+  background-size: cover; */
+  background-color: #e9f0fa;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  box-shadow: .75rem .75rem .2rem #4c77e336;
+}
+
+.about-us-2-driver1 {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-2-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about-us-2-logo {
+  height: 70px;
+}
+.about-us-2-abouthead {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 20px;
+  /* margin-top: 50px; */
+}
+
+.about-us-2-social {
+  margin: 20px;
+  font-size: 40px;
+  color: white;
+}
+.about-us-2-social-x{
+  color: black;
+}
+.about-us-2-social-insta{
+  color: white;
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+}
+.about-us-2-social-fb{
+  color: #316FF6;
+}
+.about-us-2-social-linkedin{
+  color: #0077B5;
+}
+.about-us-2-driver span {
+  color: #593cfb;
+}
+
+.about-us-2-driver p {
+  font-size: 1rem;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.about-us-2-driver button {
+  background-color: orangered;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border: none;
+}

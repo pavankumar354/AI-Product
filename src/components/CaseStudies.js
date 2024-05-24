@@ -1,119 +1,130 @@
-import React, { useRef,useEffect } from 'react';
+import React from 'react';
 import '../styles/CaseStudies.css';
-import insurance from "../images/insurance1.jpg"
-import manu from "../images/Crack (4).png"
-import semiconductor from "../images/Etching error (1).png"
-import imgdamage from "../images/defect cate.png"
- 
-const lists = [
-    [
-        'Automation in defect detection speeds up production lines.',
-        'Machine learning models predict equipment failures.'
-    ],
-    [
-        'Automated analysis of accident images for faster claims processing.',
-        'Data-driven risk assessment models enhance policy personalization.'
-    ],
-    [
-        'Quality control systems check vehicle components for defects in real-time.',
-        'Autonomous driving algorithms improve through continuous machine learning.'
-    ],
-    [
-        'Microscopic defect detection in silicon wafers reduces production waste.',
-        'AI-driven process optimization increases yield and lowers fabrication costs.'
-    ],
-    [
-        'Microscopic defect detection in silicon wafers reduces production waste.',
-        'AI-driven process optimization increases yield and lowers fabrication costs.'
-    ]
-];
-const cardData = [
-    {
-        image: manu,
-        name: 'Manufacturing Quality Control',
-        description: 'Automation in defect detection speeds up production lines. Machine learning models predict equipment failures.'
-    },
-    {
-        image: insurance,
-        name: 'Hassle-free claim process',
-        description: 'Automated analysis of accident images for faster claims processing. Data-driven risk assessment models enhance policy personalization.'
-    },
-    {
-        image: imgdamage,
-        name: 'Automotive Defect Intelligence',
-        description: 'Quality control systems check vehicle components for defects in real-time. Autonomous driving algorithms improve through continuous machine learning.'
-    },
-    {
-        image: semiconductor,
-        name: 'Semiconductor Fault Analysis',
-        description: 'Microscopic defect detection in silicon wafers reduces production waste. AI-driven process optimization increases yield and lowers fabrication costs.'
-    },
-    {
-        image: semiconductor,
-        name: 'Semiconductor Fault Analysis',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!'
-    },
-];
- 
-function Card({ id, image, name, description }) {
-    console.log(id);
-    return (
-        <div className="case-studies2-item">
-            <img src={image} className='case-studies2-img'></img>
-            <div className="case-studies2-content">
-                <div className="case-studies2-name">{name}</div>
-                <ul className='case-studies2-des'>
-                    {lists[id].map((item, index) => (
-                        <li key={index}>{item}</li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
-}
- 
-function CaseStudies2() {
-    const slideRef = useRef(null);
- 
-    const handleNextClick = () => {
-        const items = slideRef.current.querySelectorAll('.case-studies2-item');
-        slideRef.current.appendChild(items[0]);
-    };
- 
-    const handlePrevClick = () => {
-        const items = slideRef.current.querySelectorAll('.case-studies2-item');
-        slideRef.current.prepend(items[items.length - 1]);
-    };
-    useEffect(() => {
-        const interval = setInterval(() => {
-          handleNextClick();
-        }, 3000);
-        return () => clearInterval(interval);
-      }, []);
- 
-    return (
-        <div className='case-studies2-container'>
-            <div className="case-studies2-heading">
+import slide_image_1 from "../images/Manufacturing.png"
+import slide_image_2 from "../images/download.png"
+import slide_image_3 from "../images/automotive.png"
+import slide_image_4 from "../images/semiconductor.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
+
+export default function CaseStudies4() {
+  return (
+    <div className="Case-studies4-container">
+       <div className="case-studies3-heading">
                 <h1>Our <span className='nvision'>Case Studies</span></h1>
                 <p>While to err is human, sometimes the cost of a mistake might be just too high. Our cutting-edge algorithms came to the rescue in these circumstances, performing admirably across a range of domains. Introducing a few use cases...</p>
-            </div>
-            <div className="case-studies2-box">
-                <div className="case-studies2-slide" ref={slideRef}>
-                    {cardData.map((card, index) => (
-                        <Card id={index} {...card} />
-                    ))}
-                </div>
-                <div className="case-studies2-button">
-                    <button className="case-studies2-prev" onClick={handlePrevClick}><span className="material-symbols-outlined">
+          </div>
+      <Swiper
+        effect={'coverflow'}
+        // initialSlide={1}
+        grabCursor={true}
+        centeredSlides={true}
+        autoplay= {{
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
+        className="swiper_container"
+      >
+        <SwiperSlide>
+          <img src={slide_image_1} alt="slide_image" />
+          <h3>Manufacturing Quality Control</h3>
+          <ul>
+            <li>Automation in defect detection speeds up production lines.</li>
+            <li>Machine learning models shall predict equipment failures.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_4} alt="slide_image" />
+          <h3>Semiconductor Fault Analysis</h3>
+          <ul>
+            <li>Microscopic defect detection in silicon wafers reduces production waste.</li>
+            <li>AI-driven process optimization increases yield and lowers fabrication costs.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_3} alt="slide_image" />
+          <h3>Automotive Defect Intelligence</h3>
+          <ul>
+            <li>Quality control systems check vehicle components for defects in real-time.</li>
+            <li>Autonomous driving algorithms improve through continuous machine learning.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_2} alt="slide_image" />
+          <h3>Hassle-free claim process</h3>
+          <ul>
+            <li>Automated analysis of accident images for faster claims processing.</li>
+            <li>Data-driven risk assessment models enhance policy personalization.</li>
+          </ul>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+          <img src={slide_image_1} alt="slide_image" />
+          <h3>Manufacturing Quality Control</h3>
+          <ul>
+            <li>Automation in defect detection speeds up production lines.</li>
+            <li>Machine learning models shall predict equipment failures.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_4} alt="slide_image" />
+          <h3>Semiconductor Fault Analysis</h3>
+          <ul>
+            <li>Microscopic defect detection in silicon wafers reduces production waste.</li>
+            <li>AI-driven process optimization increases yield and lowers fabrication costs.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_3} alt="slide_image" />
+          <h3>Automotive Defect Intelligence</h3>
+          <ul>
+            <li>Quality control systems check vehicle components for defects in real-time.</li>
+            <li>Autonomous driving algorithms improve through continuous machine learning.</li>
+          </ul>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_2} alt="slide_image" />
+          <h3>Hassle-free claim process</h3>
+          <ul>
+            <li>Automated analysis of accident images for faster claims processing.</li>
+            <li>Data-driven risk assessment models enhance policy personalization.</li>
+          </ul>
+        </SwiperSlide>
+        
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+          <span className="material-symbols-outlined">
                         arrow_back
-                    </span></button>
-                    <button className="case-studies2-next" onClick={handleNextClick}><span className="material-symbols-outlined">
+                    </span>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+          <span className="material-symbols-outlined">
                         arrow_forward
-                    </span></button>
-                </div>
-            </div>
+                    </span>
+          </div>
+          <div className="swiper-pagination"></div>
         </div>
-    );
+      </Swiper>
+    </div>
+  );
 }
- 
-export default CaseStudies2;

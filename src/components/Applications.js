@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
 import "../styles/Applications.css"
-import appimg1 from "../images/prod id.png";
-import appimg2 from "../images/finan.png";
-import appimg3 from "../images/price est.png";
-import appimg4 from "../images/defect id.png";
- 
+import appimg1 from "../images/Defect.png";
+import appimg2 from "../images/defect cate.png";
+import appimg3 from "../images/top-view-budget-planning-note-with-pens-gray-surface-job-copybook-school-student-business-work-college-money-budget.jpg";
+import appimg4 from "../images/finan.png";
+
 const features = [
     {
         id: 1,
@@ -14,21 +14,21 @@ const features = [
     {
         id: 2,
         title: 'Aids in budgeting and decision-making processes',
-        image: appimg2
+        image: appimg3
     },
     {
         id: 3,
         title: 'Facilitates targeted solutions and remediation efforts',
-        image: appimg4
+        image: appimg2
     },
     {
         id: 4,
         title: 'Optimizes cost management and resource allocation',
-        image: appimg3
+        image: appimg4
     }
 ];
    
- export default function Applications() {
+ export default function Applications2() {
     const [selectedFeature, setSelectedFeature] = useState(features[0]);
    
     return (

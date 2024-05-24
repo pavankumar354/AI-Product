@@ -9,12 +9,13 @@
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 video {
-    width: 850px;
+    width: 950px;
 
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 20px;
     align-self: center;
 

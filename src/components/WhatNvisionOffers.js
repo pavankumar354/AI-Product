@@ -5,9 +5,9 @@ import "../styles/WhatNvisionOffers.css"
 // import gif5 from "../images/gif3.gif"
 // import gif from "../images/progif.gif"
 import gif from "../images/progif2.gif"
-import gif2 from "../images/adv8.gif"
-import gif5 from "../images/adv9.gif"
-import gif3 from "../images/adv7.gif"
+import gif2 from "../images/gif2.gif"
+import gif5 from "../images/gif3.gif"
+import gif3 from "../images/Price-Hero-Animation - Copy.gif"
 
 export default function WhatNvisonOffers() {
     return (
