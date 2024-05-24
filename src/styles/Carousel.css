@@ -117,11 +117,12 @@
       object-fit: contain;
     }
     .description{
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 25px;
+      line-height: 28px;
+      width: 90%;
     }
     .heading{
-      font-size: 40px;
+      font-size: 50px;
     }
     .contact{
       font-size: 15px;
@@ -136,6 +137,9 @@
       height: 500px;
     }
     .carou {
-      height: 800px;
+      height: 890px;
+    }
+    .text{
+      height: 400px;
     }
   }
