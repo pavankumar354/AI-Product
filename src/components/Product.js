@@ -6,7 +6,7 @@ import log1 from "../images/sample1.jpg";
 import log2 from "../images/sample2.jpg";
 import log3 from "../images/sample3.jpg";
 import log4 from "../images/sample4.jpg";
-import log5 from "../images/sample4.jpg";
+import log5 from "../images/sample5.jpg";
 import log6 from "../images/sample6.jpg";
 import log7 from "../images/sample7.jpg";
 import log8 from "../images/sample8.jpg";

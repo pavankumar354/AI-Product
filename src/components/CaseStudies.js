@@ -113,7 +113,7 @@ export default function CaseStudies4() {
         
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
-          <span className="material-symbols-outlined">
+          <span className=" material-symbols-outlined">
                         arrow_back
                     </span>
           </div>
